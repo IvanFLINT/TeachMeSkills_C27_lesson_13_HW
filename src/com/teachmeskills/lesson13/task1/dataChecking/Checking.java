@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  */
 public class Checking implements iConstants {
     public static boolean checkingLogin(String login) {
-        Pattern ptLogin = Pattern.compile(log);
+        Pattern ptLogin = Pattern.compile(LOGIN);
         Matcher matLogin = ptLogin.matcher(login);
         boolean log = login.matches("[а-яёА-ЯЁ]+");
         if (log) {
@@ -24,7 +24,7 @@ public class Checking implements iConstants {
     }
 
     public static boolean checkingPassword(String password, String confirmPassword) {
-        Pattern ptPassworrd = Pattern.compile(pas);
+        Pattern ptPassworrd = Pattern.compile(PASSWORD);
         Matcher matPassword = ptPassworrd.matcher(password);
         boolean pass1 = password.matches("[а-яёА-ЯЁ]+");
         if (pass1) {

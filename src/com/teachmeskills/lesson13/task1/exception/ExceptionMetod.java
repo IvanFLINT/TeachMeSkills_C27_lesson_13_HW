@@ -1,8 +1,6 @@
 package com.teachmeskills.lesson13.task1.exception;
 
-import com.teachmeskills.lesson13.task1.constants.iConstants;
 import com.teachmeskills.lesson13.task1.dataChecking.Checking;
-
 /**
  * The class contains the loginPassword method for working with exceptions
  */
