@@ -1,6 +1,6 @@
 package com.teachmeskills.lesson13.task1.dataChecking;
 
-import com.teachmeskills.lesson13.task1.constants.iConstants;
+import com.teachmeskills.lesson13.task1.constants.Constants;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 /**
  * Checking whether the password and login match
  */
-public class Checking implements iConstants {
+public class Checking implements Constants {
     public static boolean checkingLogin(String login) {
         Pattern ptLogin = Pattern.compile(LOGIN);
         Matcher matLogin = ptLogin.matcher(login);
