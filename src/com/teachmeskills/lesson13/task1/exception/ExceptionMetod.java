@@ -14,6 +14,7 @@ public class ExceptionMetod {
         if (!Checking.checkingPassword(password, confirmPassword)) {
             throw new WrongPasswordException("WrongPasswordException");
         }
+        System.out.println("Введенные данные корректны");
         return true;
     }
 }

@@ -16,5 +16,6 @@ public class Runner {
         System.out.print("Подтвердите пароль: ");
         String confirmPassword = sc.nextLine();
         Service.service(login, password, confirmPassword);
+        sc.close();
     }
 }
