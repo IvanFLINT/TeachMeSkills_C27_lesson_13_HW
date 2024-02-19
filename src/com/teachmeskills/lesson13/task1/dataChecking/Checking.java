@@ -12,6 +12,11 @@ public class Checking implements iConstants {
     public static boolean checkingLogin(String login) {
         Pattern ptLogin = Pattern.compile(log);
         Matcher matLogin = ptLogin.matcher(login);
+        boolean log = login.matches("[а-яёА-ЯЁ]+");
+        if(log){
+            System.out.println("В login должны быть латинские бувы");
+            return false;
+        }
         if (!matLogin.find()) {
             return false;
         }
@@ -21,8 +26,13 @@ public class Checking implements iConstants {
     public static boolean checkingPassword(String password, String confirmPassword) {
         Pattern ptPassworrd = Pattern.compile(pas);
         Matcher matPassword = ptPassworrd.matcher(password);
-        boolean con = password.matches(".*\\d.*");
-        if(!con){
+        boolean pass1 = password.matches("[а-яёА-ЯЁ]+");
+        if(pass1){
+            System.out.println("В пароле должны быть латинские бувы");
+            return false;
+        }
+        boolean pass2 = password.matches(".*\\d.*");
+        if(!pass2){
             System.out.println("В поролле должна быть хотя бы одна цифра");
             return false;
         }
