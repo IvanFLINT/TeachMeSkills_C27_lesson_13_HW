@@ -1,6 +1,9 @@
-package com.teachmeskills.lesson13.task1.exception;
+package com.teachmeskills.lesson13.task1.utils;
 
 import com.teachmeskills.lesson13.task1.dataChecking.Checking;
+import com.teachmeskills.lesson13.task1.exception.WrongLoginException;
+import com.teachmeskills.lesson13.task1.exception.WrongPasswordException;
+
 /**
  * The class contains the loginPassword method for working with exceptions
  */

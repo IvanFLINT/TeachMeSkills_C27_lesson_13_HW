@@ -1,6 +1,6 @@
 package com.teachmeskills.lesson13.task1.service;
 
-import com.teachmeskills.lesson13.task1.exception.ExceptionMetod;
+import com.teachmeskills.lesson13.task1.utils.ExceptionMetod;
 import com.teachmeskills.lesson13.task1.exception.WrongLoginException;
 import com.teachmeskills.lesson13.task1.exception.WrongPasswordException;
 
