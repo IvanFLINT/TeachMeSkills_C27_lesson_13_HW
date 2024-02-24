@@ -8,9 +8,9 @@ import java.util.regex.Pattern;
 /**
  * Checking whether the password and login match
  */
-public class Checking implements Constants {
+public class Checking {
     public static boolean checkingLogin(String login) {
-        Pattern ptLogin = Pattern.compile(LOGIN);
+        Pattern ptLogin = Pattern.compile(Constants.LOGIN);
         Matcher matLogin = ptLogin.matcher(login);
         boolean log = login.matches("[а-яёА-ЯЁ]+");
         if (log) {
@@ -24,7 +24,7 @@ public class Checking implements Constants {
     }
 
     public static boolean checkingPassword(String password, String confirmPassword) {
-        Pattern ptPassworrd = Pattern.compile(PASSWORD);
+        Pattern ptPassworrd = Pattern.compile(Constants.PASSWORD);
         Matcher matPassword = ptPassworrd.matcher(password);
         boolean pass1 = password.matches("[а-яёА-ЯЁ]+");
         if (pass1) {
